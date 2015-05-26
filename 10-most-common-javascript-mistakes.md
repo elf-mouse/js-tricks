@@ -32,7 +32,7 @@ Game.prototype.restart = function () {
 };
 
 Game.prototype.reset = function(){
-    this.clearBoard();    // ahhh, back in the context of the right 'this'!
+  this.clearBoard();    // ahhh, back in the context of the right 'this'!
 };
 ```
 

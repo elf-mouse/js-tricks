@@ -16,8 +16,8 @@ if (!Array.prototype.last){
 
 ```js
 let stereotypes = [
-  'Groundskeeper Willie', 
-  'Fat Tony', 
+  'Groundskeeper Willie',
+  'Fat Tony',
   'Cletus',
   'Comic Book Guy'
 ];
@@ -48,8 +48,8 @@ if (!Array.prototype.removeElement) {
 
 ```js
 let stereotypes = [
-  'Groundskeeper Willie', 
-  'Fat Tony', 
+  'Groundskeeper Willie',
+  'Fat Tony',
   'Cletus',
   'Comic Book Guy'
 ];
@@ -86,8 +86,8 @@ if (!Array.prototype.pushIfNotPresent) {
 
 ```js
 let stereotypes = [
-  'Groundskeeper Willie', 
-  'Fat Tony', 
+  'Groundskeeper Willie',
+  'Fat Tony',
   'Cletus',
   'Comic Book Guy'
 ];

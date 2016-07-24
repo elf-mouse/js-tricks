@@ -180,7 +180,7 @@
         r.push(k);
       return r;
     }
-     
+
     // Usage
     var fruits = ['apple', 'orange', 'peach', 'apple', 'strawberry', 'orange'];
     var uniquefruits = removeDuplicates(fruits);

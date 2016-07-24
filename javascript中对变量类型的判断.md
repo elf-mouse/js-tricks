@@ -18,16 +18,16 @@ var error= new Error();
 
 ```js
 console.log(
-  typeof num, 
-  typeof str, 
-  typeof bool, 
-  typeof arr, 
-  typeof json, 
-  typeof func, 
-  typeof und, 
-  typeof nul, 
-  typeof date, 
-  typeof reg, 
+  typeof num,
+  typeof str,
+  typeof bool,
+  typeof arr,
+  typeof json,
+  typeof func,
+  typeof und,
+  typeof nul,
+  typeof date,
+  typeof reg,
   typeof error
 );
 // number string boolean object object function undefined object object object object
@@ -69,16 +69,16 @@ console.log(
   reg instanceof RegExp,
   error instanceof Error
 )
-// num : false 
-// str : false 
-// bool : false 
-// arr : true 
-// json : true 
-// func : true 
-// und : false 
-// nul : false 
-// date : true 
-// reg : true 
+// num : false
+// str : false
+// bool : false
+// arr : true
+// json : true
+// func : true
+// und : false
+// nul : false
+// date : true
+// reg : true
 // error : true
 ```
 
@@ -217,7 +217,7 @@ type: function( obj ) {
     typeof obj;
 },
 
-// 省略部分代码... 
+// 省略部分代码...
 
 // Populate the class2type map
 jQuery.each("Boolean Number String Function Array Date RegExp Object Error".split(" "), function(i, name) {
@@ -233,9 +233,9 @@ jQuery.each("Boolean Number String Function Array Date RegExp Object Error".spli
   class2type[ "[object " + name + "]" ] = name.toLowerCase();
 });
 
-//循环之后，`class2type`的值是： 
+//循环之后，`class2type`的值是：
 class2type = {
-  '[object Boolean]' : 'boolean', 
+  '[object Boolean]' : 'boolean',
   '[object Number]'  : 'number',
   '[object String]'  : 'string',
   '[object Function]': 'function',

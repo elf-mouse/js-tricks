@@ -32,7 +32,7 @@ var array8 = [1,2,3,4,5];
 console.log(array8.length); // 5
 array8.length = 8;
 array8; // [1, 2, 3, 4, 5, undefined × 3]
- 
+
 array8.length = 3;
 array8; // [1,2,3]
 ```

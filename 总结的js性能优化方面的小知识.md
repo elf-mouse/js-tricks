@@ -91,10 +91,10 @@ obj.property2 = 2;
 
 ```javascript
 var myVar = "3.14159",
-str = "" + myVar, //  to string  
-i_int = ~ ~myVar,  //  to integer  
-f_float = 1 * myVar,  //  to float  
-b_bool = !!myVar,  /*  to boolean - any string with length 
+str = "" + myVar, //  to string
+i_int = ~ ~myVar,  //  to integer
+f_float = 1 * myVar,  //  to float
+b_bool = !!myVar,  /*  to boolean - any string with length
                         and any number except 0 are true */
 array = [myVar];  //  to array
 ```
@@ -645,9 +645,9 @@ JavaScript 和其他编程语言不同的是，在 JavaScript 中，'+'除了表
 ```javascript
 var valueA = 20;
 var valueB = "10";
-alert(valueA + valueB);     //ouput: 2010 
-alert(valueA + (+valueB));  //output: 30 
-alert(valueA + +valueB);    //output:30 
+alert(valueA + valueB);     //ouput: 2010
+alert(valueA + (+valueB));  //output: 30
+alert(valueA + +valueB);    //output:30
 alert(valueA ++ valueB);     //Compile error
 ```
 
@@ -667,7 +667,7 @@ function F2() {
     return
     valueA + valueB;
 }
-alert(F1());  //output: 3 
+alert(F1());  //output: 3
 alert(F2());  //ouput: undefined
 ```
 

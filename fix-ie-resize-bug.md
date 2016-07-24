@@ -19,7 +19,7 @@ mask.onresize = resizeHandle;
 window.onload = function(){
   if(!+"\v1" && !document.querySelector) { // for IE6 IE7
     document.body.onresize = resize;
-  } else { 
+  } else {
     window.onresize = resize;
   }
   var text =  document.getElementById("text")

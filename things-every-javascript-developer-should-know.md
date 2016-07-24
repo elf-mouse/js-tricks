@@ -141,13 +141,13 @@ for (condition 1; condition 2; condition 3) {
 
 ```js
 var person = {first_name: 'Dwayne', last_name: 'Charrington', age: 27, star_sign: 'Aquarius'};
- 
+
 // The below loop will output:
 // "Dwayne"
 // "Charrington"
 // 27
 // "Aquarius"
- 
+
 for (var p in person) {
   if (person.hasOwnProperty(p)) {
     console.log(person[p]);
@@ -159,7 +159,7 @@ for (var p in person) {
 
 ```js
 var fruits = ['orange', 'apple', 'squash', 'pear'];
- 
+
 for (var fruit of fruits) {
   console.log(fruit);
 }
@@ -169,12 +169,12 @@ for (var fruit of fruits) {
 
 ```js
 var fruits = ['apple', 'banana', 'orange', 'grapes', 'pear', 'passionfruit'];
- 
+
 // The three values on the callback function are:
 // element - The element being traversed
 // index - The current index of the item in the array starting at 0
 // array - The array being traversed (probably mostly irrelevant)
- 
+
 fruits.forEach(function(element, index, array) {
   console.log(index, element);
 });
@@ -186,7 +186,7 @@ forEach的唯一的缺点是你不能打破这个循环。如果你想使用ES5�
 
 ```js
 var i = 20;
- 
+
 while (i--) {
   console.log(i);
 }

@@ -84,7 +84,7 @@ typeof false    // "boolean"
 typeof new Date()   // "object"
 typeof []           // "object"
 typeof {}           // "object"
-typeof null         // "object"      
+typeof null         // "object"
 ```
 
 前三个还能忍，null居然也返回object，你是在逗我吗！！！（ps：其实这是JavaScript的bug 人艰不拆）

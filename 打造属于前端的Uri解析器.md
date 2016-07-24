@@ -147,7 +147,7 @@ a=1&b=2&redirect=http://www.yyy.cn/index.html?sub=search&keyword=中国&lang=cn
 
 ```javascript
 query("a=1&b=2&redirect=http://www.yyy.cn/index.html?sub=search&keyword=中国&lang=cn");
-/* 
+/*
  * {
  *     a: "1",
  *     b: "2",
@@ -162,7 +162,7 @@ query("a=1&b=2&redirect=http://www.yyy.cn/index.html?sub=search&keyword=中国&l
 
 ```javascript
 query("a=1&b=2&redirect=" + encodeURIComponent("http://www.yyy.cn/index.html?sub=search&keyword=中国&lang=cn"));
-/* 
+/*
  * {
  *     a: "1",
  *     b: "2",

@@ -108,7 +108,7 @@
     var myFrame = document.createElement('iframe');
     document.body.appendChild(myFrame);
     var myArray = window.frames[window.frames.length-1].Array;
-    var arr = new myArray(a,b,10); // [a,b,10]  
+    var arr = new myArray(a,b,10); // [a,b,10]
     // instanceof will not work correctly, myArray loses his constructor
     // constructor is not shared between frames
     arr instanceof Array; // false
@@ -164,7 +164,7 @@ good
 
     var squares = [1,2,3,4].map(function(val) {
       return val * val;
-    }); 
+    });
     // squares will be equal to [1, 4, 9, 16]
 
 ## 24. 四舍五入，保留N位小数
@@ -184,10 +184,10 @@ good
 
 ## 26. 使用for-in循环检查对象的属性时需要注意
 
-    for (var name in object) {  
+    for (var name in object) {
       if (object.hasOwnProperty(name)) {
         // do something with name
-      }  
+      }
     }
 
 ## 27. 逗号操作符
@@ -297,7 +297,7 @@ good
       function OneShotConstructor(){};
       OneShotConstructor.prototype= object;
       return new OneShotConstructor();
-    } 
+    }
     clone(Array).prototype; // []
 
 ## 39. HTML 转义函数
@@ -382,7 +382,7 @@ bad
 
 good
 
-    var min = a < b ? a : b; 
+    var min = a < b ? a : b;
     A[A.length] = v;
 
 ## 44. 编码时不要忘记使用代码美化工具。发布前使用JSLint和minification(如JSMin)。

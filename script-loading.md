@@ -1,4 +1,4 @@
-## <script> loading
+## Script loading
 
 [This WebKit blog post](http://webkit.org/blog/1395/running-scripts-in-webkit/) explains the difference between `defer` and `async` best:
 

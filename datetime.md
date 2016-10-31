@@ -26,6 +26,27 @@ new Date().valueOf();
 new Date().getTime();
 ```
 
+### 5. 兼容Android和iOS
+
+```js
+function toTimestamp(datetime) {
+  if (datetime == '' || datetime.length == 0) {
+    return 0;
+  }
+
+  if (datetime.indexOf('.') > -1) {
+    datetime = datetime.substr(0, datetime.indexOf('.'));
+  }
+
+  try {
+    datetime = datetime.replace(new RegExp('-', 'gm'), '/');
+    return (new Date(datetime)).getTime();
+  } catch (e) {}
+
+  return 0;
+}
+```
+
 ## 时间格式
 
 ### 1. `format`

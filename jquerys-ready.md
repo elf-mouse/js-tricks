@@ -109,9 +109,9 @@ domReady(function() {
 
 And it supports the following browsers.
 
-* [x] IE6+
-* [x] Firefox 3.6+
-* [x] Chrome
-* [x] Safari 5.1+
-* [x] Opera 11.6+
-* [x] Android
+- [x] IE6+
+- [x] Firefox 3.6+
+- [x] Chrome
+- [x] Safari 5.1+
+- [x] Opera 11.6+
+- [x] Android

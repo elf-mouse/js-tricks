@@ -29,27 +29,27 @@ var arr = [1, 3, 2];
 console.log(
   // This one works:
   arr
-  .map(function (i) {
-    return i + i;
-  })
-  // Chaining!
-  .sort()
+    .map(function(i) {
+      return i + i;
+    })
+    // Chaining!
+    .sort()
 );
 // => [ 2, 4, 6 ]
 
 console.log(
   // This one does not:
   arr
-  .forEach(function (i) {
-    return i + i;
-  })
-  // This is where forEach breaks:
-  .sort()
+    .forEach(function(i) {
+      return i + i;
+    })
+    // This is where forEach breaks:
+    .sort()
 );
 // => TypeError: Cannot read property 'sort' of undefined
 ```
 
-__TL;DR__
+**TL;DR**
 
 > `.map()` > `.forEach()` > `for()`
 

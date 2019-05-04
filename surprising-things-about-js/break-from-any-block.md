@@ -1,13 +1,13 @@
 ```js
 outer: for (var i = 0; i < 4; i++) {
-  while(true) {
+  while (true) {
     continue outer;
   }
 }
 ```
 
 ```js
-myswitch: switch(i) {
+myswitch: switch (i) {
   case 1:
     break myswitch;
 }

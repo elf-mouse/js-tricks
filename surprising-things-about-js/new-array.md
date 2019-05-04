@@ -7,7 +7,7 @@ But a colleague was using it recently and came across something I haven’t seen
 
 ```js
 var arr = new Array(10);
-for(var i = 0; i < arr.length; i++) {
+for (var i = 0; i < arr.length; i++) {
   arr[i] = i;
 }
 console.dir(arr);
@@ -17,14 +17,18 @@ This produces an array of items from 0 to 9. But then, if this is refactored to 
 
 ```js
 var arr = new Array(10);
-arr = arr.map(function(item, index) { return index; });
+arr = arr.map(function(item, index) {
+  return index;
+});
 console.dir(arr);
 ```
 
 ```js
 var arr = new Array(10);
 arr[8] = undefined;
-arr = arr.map(function(item, index) { return index; });
+arr = arr.map(function(item, index) {
+  return index;
+});
 console.dir(arr);
 ```
 

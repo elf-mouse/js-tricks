@@ -4,7 +4,7 @@
 
 ```js
 // Build an array of test data.
-var data = [ "X" ];
+var data = ["X"];
 
 // Push data onto the array. Push() appends elements to the end
 // of the given array. Note that it can take more than one
@@ -12,11 +12,11 @@ var data = [ "X" ];
 // In the output, notice that when push() takes multiple arguments
 // they are appended in a left-to-right order (mimicing their
 // appearence in the arguments list).
-data.push( "A" );
-data.push( "B", "C" );
+data.push("A");
+data.push("B", "C");
 
 // Output resultant array.
-console.log( data );
+console.log(data);
 ```
 
 > ["X", "A", "B", "C"]
@@ -25,11 +25,11 @@ console.log( data );
 
 ```js
 // Build an array of test data.
-var data = [ "A", "B", "C" ];
+var data = ["A", "B", "C"];
 
 // Pop the element off of the end of the array.
-console.log( data.pop() );
-console.log( data );
+console.log(data.pop());
+console.log(data);
 ```
 
 > C
@@ -40,18 +40,18 @@ console.log( data );
 
 ```js
 // Build an array of test data.
-var data = [ "X" ];
+var data = ["X"];
 
 // Unshift data onto the array. Unshift() prepends elements to
 // the beginning of the given array. Note that it can take more
 // than one argument. In the output, notice that when unshift()
 // takes multiple arguments, they are prepended in a right-to-left
 // order (mimicing their appearence in the arguments list).
-data.unshift( "A" );
-data.unshift( "B", "C" );
+data.unshift("A");
+data.unshift("B", "C");
 
 // Output resultant array.
-console.log( data );
+console.log(data);
 ```
 
 > ["B", "C", "A", "X"]
@@ -60,11 +60,11 @@ console.log( data );
 
 ```js
 // Build an array of test data.
-var data = [ "A", "B", "C" ];
+var data = ["A", "B", "C"];
 
 // Shift the element off of the beginning of the array.
-console.log( data.shift() );
-console.log( data );
+console.log(data.shift());
+console.log(data);
 ```
 
 > A

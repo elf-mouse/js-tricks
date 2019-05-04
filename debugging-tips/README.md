@@ -4,7 +4,7 @@
 
 ```js
 if (thisThing) {
-    debugger;
+  debugger;
 }
 ```
 
@@ -12,9 +12,9 @@ if (thisThing) {
 
 ```js
 var animals = [
-  { animal: 'Horse', name: 'Henry', age: 43 },
-  { animal: 'Dog', name: 'Fred', age: 13 },
-  { animal: 'Cat', name: 'Frodo', age: 18 }
+  { animal: "Horse", name: "Henry", age: 43 },
+  { animal: "Dog", name: "Fred", age: 13 },
+  { animal: "Cat", name: "Frodo", age: 18 }
 ];
 
 console.table(animals);
@@ -26,7 +26,7 @@ Will output:
 
 ## 3. Try all the sizes
 
-Jump into your inspector and click the __‘toggle device mode’__ button.
+Jump into your inspector and click the **‘toggle device mode’** button.
 
 ![](Debugging 1.png)
 
@@ -37,15 +37,15 @@ Jump into your inspector and click the __‘toggle device mode’__ button.
 ## 5. Benchmark loops using `console.time()` and `console.timeEnd()`
 
 ```js
-console.time('Timer1');
+console.time("Timer1");
 
 var items = [];
 
-for (var i = 0; i < 100000; i++){
-  items.push({index: i});
+for (var i = 0; i < 100000; i++) {
+  items.push({ index: i });
 }
 
-console.timeEnd('Timer1');
+console.timeEnd("Timer1");
 ```
 
 This has produced the following result:
@@ -119,7 +119,7 @@ Line 33 will output:
 
 ![](Debugging 4.png)
 
-Now we can see that __func1__ called __func2__, which called __func4__. __Func4__ then created an instance of __Car__ and then called the function __car.funcX__, and so on.
+Now we can see that **func1** called **func2**, which called **func4**. **Func4** then created an instance of **Car** and then called the function **car.funcX**, and so on.
 
 ## 7. Unminify code as an easy way to debug JavaScript
 
@@ -140,12 +140,12 @@ var func1 = function() {
 var Car = function() {
   this.funcX = function() {
     this.funcY();
-  }
+  };
 
   this.funcY = function() {
     this.funcZ();
-  }
-}
+  };
+};
 
 var car = new Car();
 ```
@@ -154,7 +154,7 @@ Type debug(car.funcY) in the console and the script will stop in debug mode when
 
 ![](Debugging 6.png)
 
-## 9.  Black box scripts that are NOT relevant
+## 9. Black box scripts that are NOT relevant
 
 Today we often have a few libraries and frameworks on our web apps. Most of them are well tested and relatively bug-free. But, the debugger still steps into all the files that have no relevance for this debugging task. The solution is to black box the script you don’t need to debug. This could also include your own scripts. [Read more about debugging black box in this article](https://raygun.com/blog/javascript-debugging-with-black-box/).
 
@@ -181,7 +181,7 @@ Will output:
 
 ```js
 var func1 = function(x, y, z) {
-//....
+  //....
 };
 ```
 

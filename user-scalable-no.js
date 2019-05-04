@@ -5,7 +5,7 @@ let iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream; // ä
 if (iOS) {
   // Disable pinch zoom on document
   document.documentElement.addEventListener(
-    'touchstart',
+    "touchstart",
     event => {
       if (event.touches.length > 1) {
         event.preventDefault();
@@ -17,7 +17,7 @@ if (iOS) {
   // Disable double tap on document
   let lastTouchEnd = 0;
   document.documentElement.addEventListener(
-    'touchend',
+    "touchend",
     event => {
       let now = new Date().getTime();
       if (now - lastTouchEnd <= 300) {

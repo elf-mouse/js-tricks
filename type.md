@@ -1,66 +1,66 @@
 ```js
 // under Google Chrome 36
 
-Object.prototype.toString.call([])
+Object.prototype.toString.call([]);
 // "[object Array]"
-Object.prototype.toString.call(function(){})
+Object.prototype.toString.call(function() {});
 // "[object Function]"
-Object.prototype.toString.call({})
+Object.prototype.toString.call({});
 // "[object Object]"
-Object.prototype.toString.call(null)
+Object.prototype.toString.call(null);
 // "[object Null]"
-Object.prototype.toString.call(undefined)
+Object.prototype.toString.call(undefined);
 // "[object Undefined]"
-Object.prototype.toString.call(1)
+Object.prototype.toString.call(1);
 // "[object Number]"
-Object.prototype.toString.call(1.1)
+Object.prototype.toString.call(1.1);
 // "[object Number]"
-Object.prototype.toString.call(NaN)
+Object.prototype.toString.call(NaN);
 // "[object Number]"
-Object.prototype.toString.call(Infinity)
+Object.prototype.toString.call(Infinity);
 // "[object Number]"
-Object.prototype.toString.call(true)
+Object.prototype.toString.call(true);
 // "[object Boolean]"
-Object.prototype.toString.call('')
+Object.prototype.toString.call("");
 // "[object String]"
-Object.prototype.toString.call(/./g)
+Object.prototype.toString.call(/./g);
 // "[object RegExp]"
-Object.prototype.toString.call()
+Object.prototype.toString.call();
 // "[object Undefined]"
-Object.prototype.toString.call(void 0)
+Object.prototype.toString.call(void 0);
 // "[object Undefined]"
 
-Object.prototype.toString.call(window)
+Object.prototype.toString.call(window);
 // "[object global]"
-Object.prototype.toString.call(document)
+Object.prototype.toString.call(document);
 // "[object HTMLDocument]"
-Object.prototype.toString.call(document.location)
+Object.prototype.toString.call(document.location);
 // "[object Location]"
-Object.prototype.toString.call(document.location.href)
+Object.prototype.toString.call(document.location.href);
 // "[object String]"
 
-Object.prototype.toString.call(Object)
+Object.prototype.toString.call(Object);
 // "[object Function]"
-Object.prototype.toString.call(Object.prototype)
+Object.prototype.toString.call(Object.prototype);
 // "[object Object]"
-Object.prototype.toString.call(Object.prototype.toString)
+Object.prototype.toString.call(Object.prototype.toString);
 // "[object Function]"
 
-Object.prototype.toString.call(Date)
+Object.prototype.toString.call(Date);
 // "[object Function]"
-Object.prototype.toString.call(Date())
+Object.prototype.toString.call(Date());
 // "[object String]"
-Object.prototype.toString.call(new Date())
+Object.prototype.toString.call(new Date());
 // "[object Date]"
 
-Object.prototype.toString.call(Math)
+Object.prototype.toString.call(Math);
 // "[object Math]"
-Object.prototype.toString.call(Math.abs)
+Object.prototype.toString.call(Math.abs);
 // "[object Function]"
 
-Object.prototype.toString.call(Symbol())
+Object.prototype.toString.call(Symbol());
 // "[object Symbol]"
 
-Object.prototype.toString.call(JSON)
+Object.prototype.toString.call(JSON);
 // "[object JSON]"
 ```

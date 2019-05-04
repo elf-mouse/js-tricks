@@ -31,5 +31,5 @@ new func(); // func is not defined
 
 let func = function func() {
   console.log("Fine");
-}
+};
 ```

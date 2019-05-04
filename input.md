@@ -11,11 +11,11 @@
 **2. 外部 JS**
 
 ```html
-<input id="hoge" type="number" maxlength="4">
+<input id="hoge" type="number" maxlength="4" />
 ```
 
 ```js
-document.getElementById('hoge').addEventListener('input', function() {
+document.getElementById("hoge").addEventListener("input", function() {
   if (this.value.length > this.maxLength) {
     this.value = this.value.slice(0, this.maxLength);
   }
@@ -25,5 +25,5 @@ document.getElementById('hoge').addEventListener('input', function() {
 **3. H5 `pattern`**
 
 ```html
-<input type="text" pattern="\d" maxlength="4">
+<input type="text" pattern="\d" maxlength="4" />
 ```
